@@ -30,4 +30,16 @@ while True:
 					os.system("firefox "+p)
 				else:
 					break
+			elif ("visit" in p):
+				os.system("firefox "+p[5:])
+		       elif ("done" in p) or ("quit" in p) or ("exit" in p):
+			print("See you soon, Take care.")
+			break
+		      elif ("install" in p) or ("download" in p):
+			os.system("sudo apt install gimp")
+	else:
+		ch=input("Sorry,I don't understand that. Should I search it on internet [y/n]: ")
+		if ch=="y":
+			os.system("firefox "+p)
+ts.speak("See  you  soon   , take   care.")
 	
