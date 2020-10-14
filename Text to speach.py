@@ -41,7 +41,7 @@ while True:
 			break
 		      elif ("install" in p) or ("download" in p):
 			os.system("sudo apt install gimp")
-	 else:
+	else:
 		ch=input("Sorry [y/n]: ")
 		if ch=="y":
 			os.system("firefox "+p)
