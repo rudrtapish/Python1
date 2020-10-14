@@ -22,6 +22,10 @@ while True:
 				os.system("libreoffice --impress")
 			elif ("calc" in p) or ("excel" in p):
 				os.system("libreoffice --calc")
+			elif ("code" in p) or ("code." in p):
+				os.system("anaconda")
+			elif ("GIthub" in p) or ("git" in p):
+				os.system("GIthub Desktop")
 			elif ("html" in p):
 				os.system("libreoffice --web")
 			else:
@@ -30,4 +34,16 @@ while True:
 					os.system("firefox "+p)
 				else:
 					break
+			elif ("visit" in p):
+				os.system("firefox "+p[5:])
+		       elif ("done" in p) or ("quit" in p) or ("exit" in p):
+			print("See you soon, Take care.")
+			break
+		      elif ("install" in p) or ("download" in p):
+			os.system("sudo apt install gimp")
+	else:
+		ch=input("Sorry [y/n]: ")
+		if ch=="y":
+			os.system("firefox "+p)
+ts.speak("See  you  soon   , take   care.")
 	
